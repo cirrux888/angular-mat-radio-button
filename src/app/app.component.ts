@@ -1,4 +1,4 @@
-import { Component, VERSION, ViewChild } from '@angular/core';
+import { Component, VERSION, ViewChild, ElementRef } from '@angular/core';
 import { MatRadioGroup } from '@angular/material/radio';
 
 @Component({
@@ -9,7 +9,7 @@ import { MatRadioGroup } from '@angular/material/radio';
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
-  @ViewChild('surveyPlusPlans', {static: false}) surveyPlusPlans:MatRadioGroup;
+  @ViewChild('surveyPlusPlans', {static: false}) surveyPlusPlans:ElementRef;
 
   constructor() {}
 
@@ -21,7 +21,7 @@ export class AppComponent  {
 
   onSubmitRadioGroup() { 
     console.log("onSubmitRadioGroup()");
-    
+    console.log("this.surveyPlusPlans.selected=" + this.surveyPlusPlans.nativeElement.value);
   }
   
 }
