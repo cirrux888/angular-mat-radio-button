@@ -1,6 +1,14 @@
 <div class="flex-container">
-<mat-radio-group (change)="onRadioButtonChange(">
-  <mat-radio-button value="1">Option 1</mat-radio-button>
-  <mat-radio-button value="2">Option 2</mat-radio-button>
+<p>
+This is an example of how to use a mat-radio-group and mat-radio-button to 
+provide a list of options to choose from.   The (change) event listener 
+calls the 'onRadioButtonChange()' event handler and prints 
+the selected radio button id and value to the console.
+</p>
+<mat-radio-group (change)="onRadioButtonChange($event)">
+  <mat-radio-button id="radio_1" value="1">Option 1</mat-radio-button>
+  <mat-radio-button id="radio_2" value="2">Option 2</mat-radio-button>
+  <mat-radio-button id="radio_3" value="3">Option 3</mat-radio-button>
+  <mat-radio-button id="radio_4" value="4">Option 4</mat-radio-button>
 </mat-radio-group>
 </div>
