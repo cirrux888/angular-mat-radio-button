@@ -1,5 +1,8 @@
 p {
   font-family: Lato;
+  line-height: 2.0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .flex-container {  
