@@ -10,5 +10,8 @@ export class AppComponent  {
 
   constructor() {}
 
+  onRadioButtonChange() { 
+    console.log("onRadioButtonChange()");
+  }
   
 }
